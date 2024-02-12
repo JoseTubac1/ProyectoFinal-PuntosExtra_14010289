@@ -17,18 +17,22 @@ var recargo_total = 0
 //Precio final 
 var precio_final = 0
 //Variable de retorno para el DoWhile
-var continuacion = true
+var continuacion = "si";
 
 do{
 
   var continar_entrada = prompt("Ingrese ¨1¨ para continuar o ¨salir¨ para cerrar el cotizador")
-  if (continar_entrada.toUpperCase == "SALIR"){
-      continuacion = false
+  if (continar_entrada != null) {
+  		continar_entrada = continar_entrada.toUpperCase()
+  }
+  if (continar_entrada == "SALIR"){
+      continuacion = "no"
+  break;    
   } else if (continar_entrada !== "1") {
     alert("Usted Ingreso una opcion Invalida")
-    continuacion = true
+    continuacion = "si"
   } else if (continar_entrada == 1) {
-    
+    continuacion = "si"
 
   //Mensajes de alerta para ingresar datos 
   var nombre = prompt("Ingrese su nombre completo, por favor")
@@ -116,4 +120,4 @@ do{
 
   }
 
-} while (continuar)
+} while (continuacion == "si")

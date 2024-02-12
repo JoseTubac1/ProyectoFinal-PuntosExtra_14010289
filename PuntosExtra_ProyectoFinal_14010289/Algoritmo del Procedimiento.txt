@@ -1,11 +1,27 @@
-Inicializar una variable continuar con el valor verdadero (true).
-Crear un bucle que se ejecutará mientras continuar sea verdadero.
-Dentro del bucle, realizar las siguientes acciones:
-a. Solicitar al usuario los datos necesarios para la cotización (nombre, edad, estado civil, edad del cónyuge, número de hijos, cantidad de propiedades, salario).
-b. Calcular los recargos basados en la edad del asegurado y del cónyuge, y la cantidad de hijos como se hace actualmente en el programa.
-c. Agregar los recargos extra basados en la cantidad de propiedades y los ingresos del asegurado (35% por propiedad y 5% sobre el salario).
-d. Calcular el precio final sumando el precio base y el recargo total.
-e. Mostrar el resultado al usuario.
-f. Preguntar al usuario si desea continuar solicitando cotizaciones.
-Si el usuario ingresa "Salir", cambiar el valor de continuar a falso (false) para salir del bucle.
-Si el usuario ingresa cualquier otra cosa, continuar con el siguiente ciclo de cotización.
+Documentación del Procedimiento del Algoritmo -14010289-
+
+Descripción
+El algoritmo proporcionado es un cotizador de seguros que solicita información al usuario, como nombre, edad, estado civil, edad del cónyuge y cantidad de hijos, para calcular el precio final de la cotización. El programa solicita cotizaciones hasta que el usuario ingresa "salir" para terminar la ejecución o "1" para continuar con otra cotización.
+
+Variables Utilizadas
+- `precio_base`: Precio base de la cotización, en quetzales.
+- `edad_18`, `edad_25`, `edad_50`: Valores de recargo por edad del asegurado para distintos rangos de edad.
+- `casado_18`, `casado_25`, `casado_50`: Valores de recargo por edad del cónyuge para distintos rangos de edad.
+- `hijos_recargo`: Valor de recargo por cantidad de hijos.
+- `recargo`: Variable utilizada para calcular los recargos individuales.
+- `recargo_total`: Suma de todos los recargos aplicados.
+- `precio_final`: Precio final de la cotización.
+- `continuacion`: Variable de retorno para controlar la continuidad del bucle `do-while`.
+
+Procedimiento
+1. Inicia un bucle `do-while` que solicita cotizaciones hasta que el usuario ingresa "salir" para terminar la ejecución.
+2. Solicita al usuario ingresar "1" para continuar o "salir" para cerrar el cotizador.
+3. Si el usuario ingresa "salir", el bucle termina.
+4. Si el usuario ingresa cualquier otra opción, se le solicita que ingrese una opción válida nuevamente.
+5. Si el usuario ingresa "1", se continúa con el proceso de cotización.
+6. Se solicita al usuario ingresar su nombre, edad, estado civil, edad del cónyuge y cantidad de hijos.
+7. Se calculan los recargos por edad del asegurado, del cónyuge y por la cantidad de hijos.
+8. Se suma el recargo total.
+9. Se calcula el precio final sumando el precio base y el recargo total.
+10. Se muestra el resultado al usuario con el nombre, recargo total y precio final de la cotización.
+11. El bucle continúa si el usuario desea realizar otra cotización.
