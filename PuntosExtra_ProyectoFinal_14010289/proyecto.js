@@ -110,6 +110,12 @@ do{
       recargo = precio_base * hijos_recargo * cantidad_hijos_numero;
       recargo_total = recargo_total + recargo;
     } 
+  // Recargos extra basados en la cantidad de propiedades y los ingresos del asegurado
+  var cantidad_propiedades = parseInt(prompt("¿Cuántas propiedades tiene? Ingrese solamente números"));
+  var salario = parseInt(prompt("¿Cuál es su salario? Ingrese solamente números"));
+  recargo_total += precio_base * 0.35 * cantidad_propiedades; // 35% por propiedad
+  recargo_total += salario * 0.05; // 5% sobre el salario  
+
 
 
     precio_final = precio_base + recargo_total

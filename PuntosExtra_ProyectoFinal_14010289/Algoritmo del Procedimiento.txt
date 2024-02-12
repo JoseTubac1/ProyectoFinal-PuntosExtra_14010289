@@ -21,7 +21,9 @@ Procedimiento
 5. Si el usuario ingresa "1", se continúa con el proceso de cotización.
 6. Se solicita al usuario ingresar su nombre, edad, estado civil, edad del cónyuge y cantidad de hijos.
 7. Se calculan los recargos por edad del asegurado, del cónyuge y por la cantidad de hijos.
-8. Se suma el recargo total.
-9. Se calcula el precio final sumando el precio base y el recargo total.
-10. Se muestra el resultado al usuario con el nombre, recargo total y precio final de la cotización.
-11. El bucle continúa si el usuario desea realizar otra cotización.
+8. Se calculan los recagos por la cantidad de propiedades que el usuario tenga a su nombre
+9. Se calcula el recargo sobre el sueldo devengado del usuario
+10. Se suma el recargo total.
+11. Se calcula el precio final sumando el precio base y el recargo total.
+12. Se muestra el resultado al usuario con el nombre, recargo total y precio final de la cotización.
+13. El bucle continúa si el usuario desea realizar otra cotización.
