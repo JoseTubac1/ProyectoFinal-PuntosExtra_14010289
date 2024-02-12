@@ -2,15 +2,15 @@
 //Precio base de la cotización, en quetzales.
 var precio_base = 2000
 //Valores de los recargos 
-var edad_18 = 0.1 // 10%
-var edad_25 = 0.2 // 20%
-var edad_50 = 0.3 // 30%
+var edad_18 = 0.1 //10%
+var edad_25 = 0.2 //20%
+var edad_50 = 0.3 //30%
 //Valores de recargos por edad del conyuge
-var casado_18 = 0.1 // 10%
-var casado_25 = 0.2 // 20%
-var casado_50 = 0.3 // 30%
+var casado_18 = 0.1 //10%
+var casado_25 = 0.2 //20%
+var casado_50 = 0.3 //30%
 //Valores de recargo por cantidad de hijos
-var hijos_recargo = 0.2 // 20%
+var hijos_recargo = 0.2 //20%
 //Recargo
 var recargo = 0
 var recargo_total = 0
@@ -20,6 +20,16 @@ var precio_final = 0
 var continuacion = true
 
 do{
+
+  var continar_entrada = prompt("Ingrese ¨1¨ para continuar o ¨salir¨ para cerrar el cotizador")
+  if (continar_entrada.toUpperCase == "SALIR"){
+      continuacion = false
+  } else if (continar_entrada !== "1") {
+    alert("Usted Ingreso una opcion Invalida")
+    continuacion = true
+  } else if (continar_entrada == 1) {
+    
+
   //Mensajes de alerta para ingresar datos 
   var nombre = prompt("Ingrese su nombre completo, por favor")
   var edad = prompt("¿Cuantos años tiene? Ingrese solamente números ")
@@ -104,12 +114,6 @@ do{
   alert ("El recargo total sera de: "+recargo_total)
   alert ("El precio sera de: "+precio_final)
 
-    var continar_entrada = prompt("Ingrese ¨1¨ para continuar o ¨salir¨ para cerrar el cotizador")
-    if (continar_entrada.toUpperCase == "SALIR"){
-        continuacion = false
-    } else if (continar_entrada !== "1") {
-      alert("Usted Ingreso una opcion Invalida")
-    }
-
+  }
 
 } while (continuar)
