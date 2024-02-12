@@ -1,0 +1,34 @@
+Explicacion del Problema y Analisis Primario de Requerimientos -14010289-
+
+La empresa de Seguros TK-U. Busca implementar un sistema automatizado referente a un Cotizador Automatico. Para que los clientes que deseen adquirir una poliza de seguro puedan realizar de manera automatica la proyeccion estimada de compra dependiendo de los parametros que ingrese.
+
+Los parametros que se estipulan que cambien el valor de la cotizacion en dependencia situacional del interesado son:
+
+1) Desplegar un pseudo menu en el cual se condisere realizar cotizaciones hasta que el usuario ingrese a palabra salir para detener la ejecucion del programa
+
+2) El cliente debe de tener la mayoria de edad para poder contratar una poliza. De lo contrario no se continuara con la cotizacion.
+	a) +18 años
+
+3)Al plan base de aplicacion se le suma una serie de recargos se estipulado en las siguientes condiciones.
+	a) Edad del asegurado
+		a.1) 18 - 24 años, 10% recargo aplicable
+		a.2) 25 - 49 años, 20% recargo aplicable
+		a.3) 50 o más años, 30% recargo aplicable
+		
+	b) Estado Civil 
+		b.1)Soltero
+		b.2)Casado - Tomar en cuenta la edad de conyuge
+			b.2.1) 18 - 24 años, 10% recargo aplicable
+			b.2.2) 25 - 49 años, 20% recargo aplicable
+			b.2.3) 50 o más años, 30% recargo aplicable
+
+	c) Cantidad de Hijos, en casos que aplique.
+	Por cada hijo, aplicar un 20% sobre el precio base (no importa la edad)
+
+	d) Cantidad de Propiedades
+		d.) Se hara un recargo del 35% por cada propiedad al nombre del cliente
+	e) Ingresos Mensuales
+		e.) Se hara un recargo del 5% sobre el salario del cliente.
+
+
+

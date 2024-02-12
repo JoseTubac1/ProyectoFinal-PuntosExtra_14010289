@@ -1,0 +1,11 @@
+Inicializar una variable continuar con el valor verdadero (true).
+Crear un bucle que se ejecutará mientras continuar sea verdadero.
+Dentro del bucle, realizar las siguientes acciones:
+a. Solicitar al usuario los datos necesarios para la cotización (nombre, edad, estado civil, edad del cónyuge, número de hijos, cantidad de propiedades, salario).
+b. Calcular los recargos basados en la edad del asegurado y del cónyuge, y la cantidad de hijos como se hace actualmente en el programa.
+c. Agregar los recargos extra basados en la cantidad de propiedades y los ingresos del asegurado (35% por propiedad y 5% sobre el salario).
+d. Calcular el precio final sumando el precio base y el recargo total.
+e. Mostrar el resultado al usuario.
+f. Preguntar al usuario si desea continuar solicitando cotizaciones.
+Si el usuario ingresa "Salir", cambiar el valor de continuar a falso (false) para salir del bucle.
+Si el usuario ingresa cualquier otra cosa, continuar con el siguiente ciclo de cotización.
